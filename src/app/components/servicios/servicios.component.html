@@ -1,0 +1,12 @@
+<div class="card">
+	<div class="card-body">
+		<h5 class="card-title">{{ servicio.title }}</h5>
+		<p class="card-text">{{ servicio.description }}</p>
+		<!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+	</div>
+	<div class="card-footer text-muted">
+		<span class="text-primary text-left link" (click)="action('edit')">Editar</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="text-primary text-right link" (click)="action('delete')">Eliminar</span>
+	</div>
+</div>

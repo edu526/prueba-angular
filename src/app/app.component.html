@@ -1,0 +1,11 @@
+<app-filter (onChange)="filter($event)"></app-filter>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="row">
+				<app-servicios *ngFor="let servicio of servicios" class="col-lg-4 mt-3" [servicio]="servicio" (onEdit)="edit($event)" (onDelete)="delete($event)"></app-servicios>
+			</div>
+		</div>
+		<app-edit class="col-sm-4 mt-3" [servicio]="servicioSelected" (onSave)="save($event)"></app-edit>
+	</div>
+</div>
